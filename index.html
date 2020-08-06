@@ -43,113 +43,115 @@
           <a class="nav-link underline" href="#">Join Our Team</a>
         </li>
       </ul>
-      <span class="navbar-text">
-        <button class="btn btn-outline-warning">Sign Up</button>
+      <span class="mr-2">
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Chinese</a>
+          </div>
+        </div>
+      </span>
+      <span>
+        <button class="btn btn-outline-warning mr-2">Sign Up</button>
         <button class="btn btn-outline-info">Log In</button>
       </span>
     </div>
 </nav>
 
   <!-- banner Section -->
-    <!-- OPAC -->
+  <!-- OPAC -->
   <section id="banner" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="container text-center text-md-left" data-aos="fade-up">
-      <h1>Find It and Read It.</h1>
-      <form class="form-inline">
-        <div class="form-check mr-5 ml-5">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-          <label class="form-check-label" for="exampleRadios1">
-           Author
-          </label>
-        </div>
-        <div class="form-check mr-5">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-          <label class="form-check-label" for="exampleRadios2">
-           Title
-          </label>
-        </div>
-        <div class="form-check mr-5">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-          <label class="form-check-label" for="exampleRadios3">
-           General
-          </label>
+    <div class="container h-50">
+      <div class="container text-center">
+        <h1 class="text-center">Browse The Library</h1>
+        <form class="form-inline">
+        <div class="container align-items-center">
+          <div class="form-check">
+            <input class="mr-2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label mr-5" for="exampleRadios1">
+             Author
+            </label>
+            <input class="mr-2" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label mr-5" for="exampleRadios2">
+             Title
+            </label>
+            <input class="mr-2" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+            <label class="form-check-label mr-5" for="exampleRadios3">
+             Genre
+            </label>
+            <input class="mr-2" type="radio" name="exampleRadios" id="exampleRadios3" value="option4" checked>
+            <label class="form-check-label mr-5" for="exampleRadios3">
+             General
+            </label>
+          </div>
        </div>
-        <div class="ml-5">
-        </div>
-        <div class="ml-5">
-        </div>
-        <div class="ml-5">
-        </div>
-
-        <input class="form-control mr-sm-2" type="search" placeholder="Keyword" aria-label="Search">
-        <a href="#about" class="btn-get-started scrollto">Search</a>
+      </div>
+      <div class="container text-center text-center">
+        <input class="form-control text-center" type="search" placeholder="Keyword" aria-label="Search">
+        <a href="" class="btnSearch mt-5">Search</a>
       </form>
-      <h2></h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      </div>
+    </div>
+    <div class="container text-center mt-5">
+        <a href="" class="btn-get-started mt-5">Explore</a>
     </div>
   </section>
   <!-- End banner -->
 
-
   <!-- Category -->
-  <div class="container-fluid bg-2 text-center">
-    <h3 class="margin"Browse By Category</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <a href="#" class="btn btn-default btn-lg">
-      <span class="glyphicon glyphicon-search"></span> Search
-    </a>
-  </div>
+  <div class="container bg-2 text-center">
+      <h3 class="margin">Don't Know What to Read?</h3>
+    </div>
 
-  <!-- About Us -->
-  <div class="container-fluid bg-3 text-center">
-    <h3 class="margin">About Us</h3><br>
-    <div class="row">
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <!-- About Us -->
+    <div class="container-fluid bg-3 text-center">
+      <h3 class="margin">About Us</h3><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Contact Us -->
-  <div class="container-fluid bg-2 text-center">
-    <h3 class="margin">Contact Us</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <a href="#" class="btn btn-default btn-lg">
-      <span class="glyphicon glyphicon-search"></span> Search
-    </a>
-  </div>
+    <!-- Contact Us -->
+    <div class="container-fluid bg-2 text-center">
+      <h3 class="margin">Contact Us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </a>
+    </div>
 
-  <!-- Sponsorship -->
-  <div class="container-fluid bg-2 text-center">
-    <h3 class="margin">Trusted By</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <a href="#" class="btn btn-default btn-lg">
-      <span class="glyphicon glyphicon-search"></span> Search
-    </a>
-  </div>
+    <!-- Sponsorship -->
+    <div class="container-fluid bg-2 text-center">
+      <h3 class="margin">Trusted By</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </a>
+    </div>
 
-  <!-- Carreer -->
-  <div class="container-fluid bg-2 text-center">
-    <h3 class="margin">Join Us Now</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    <a href="#" class="btn btn-default btn-lg">
-      <span class="glyphicon glyphicon-search"></span> Search
-    </a>
-  </div>
+    <!-- Carreer -->
+    <div class="container-fluid bg-2 text-center">
+      <h3 class="margin">Join Us Now</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </a>
+    </div>
 
-  <!-- Footer -->
-  <footer class="container-fluid bg-4 text-center">
-    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
-  </footer>
 
 </body>
 </html>
