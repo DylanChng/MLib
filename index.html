@@ -143,8 +143,10 @@
             <div class=" d-flex align-items-stretch">
               <div class="info">
                 <div class="address">
-                  <svg class="bi bi-chevron-right" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-compass" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15.016a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13zm0 1a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/>
+                    <path d="M6 1a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1zm.94 6.44l4.95-2.83-2.83 4.95-4.95 2.83 2.83-4.95z"/>
+                  </svg>
                   <h4>Location:</h4>
                   <p>2nd floor, Wisma HELP, Jalan Dungun
                     50490 Kuala Lumpur, Malaysia
@@ -152,13 +154,20 @@
                 </div>
 
                 <div class="email mt-3">
-                  <i class="icofont-envelope"></i>
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-mailbox" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+                    <path fill-rule="evenodd" d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854z"/>
+                    <path d="M5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+                  </svg>
                   <h4>Email:</h4>
                   <p>mplrdc@help.edu.my </p>
                 </div>
 
                 <div class="phone mt-3">
-                  <i class="icofont-phone"></i>
+                  <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                    <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg>
                   <h4>Call:</h4>
                   <p>603-2711 2000</p>
                 </div>
@@ -182,7 +191,7 @@
     <!-- Carreer -->
     <div class="container-fluid bg-2 text-center">
       <h3 class="margin">Be Part of Us</h3>
-      <p>Kindly drop your resume and we will get back to you with a schedule of the interview.</p>
+      <p>Kindly provide us your resume and we will get back to you with a schedule of the interview as soon as possible.</p>
       <!-- Button trigger modal -->
     <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModalCenter">
       I am Interested
@@ -193,17 +202,25 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Resume Submission</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+              <form>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Attach your resume/CV below.</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+              <div class="form-group">
+               <label for="exampleFormControlTextarea1">Remarks Eg. Preferred date for interview.</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+            </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
             </div>
           </div>
         </div>
