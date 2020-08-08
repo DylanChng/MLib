@@ -114,13 +114,13 @@
     <div class="container-fluid bg-3 text-center">
       <h3 class="">About Us</h3><br>
       <div class="container bg-2 text-center">
-        <p class="text-justify">The Malaysian Public Library, Research and Development Centre (formerly known as the Malayan Public Library Association) was formed in 1955. Since then, this historical library has made immense contributions to the mental and intellectual development of Malaysians, both in the urban and non-urban areas. It has had a chequered history of providing reading materials and information services for the upliftment of the young and old through times of trouble and social instability.
+        <img src="resource/pub.jpg"  alt="publication">
+        <p class="text-justify mt-3">The Malaysian Public Library, Research and Development Centre (formerly known as the Malayan Public Library Association) was formed in 1955. Since then, this historical library has made immense contributions to the mental and intellectual development of Malaysians, both in the urban and non-urban areas. It has had a chequered history of providing reading materials and information services for the upliftment of the young and old through times of trouble and social instability.
           Presently it is located on the 2nd floor, Wisma HELP, Jalan Dungun 50490 Kuala Lumpur.
           The library, a non-profit organization, is managed by a Council of Board Members. The financial support comes mainly from members’ subscription fees and donations from the public. In 2002, HELP University College was invited to join the Council and to provide financial support as well as manpower to manage the library.
           Currently, it has a collection of over 60,000 books, mostly in Chinese. The subjects cover a wide range from classical and modern literature to current topics of interest. Most of the non-Chinese books were donated by the library members and the Chinese community.
           The management would like to encourage the Chinese community, students and other interested members of the public to come and enjoy the library’s full range of facilities as an important complement to their formal and informal education.
         </p>
-        <img src="resource/pub.jpg"  alt="publication">
         <h3 class="">Facilities and Future</h3><br>
         <p class="text-justify">The management plans to upgrade the library to help promote a strong reading culture, enhance educational standards, upgrade general knowledge and strengthen relationships among the various communities in Malaysia. The plans include:</p>
         <ul class="text-justify">
@@ -202,12 +202,12 @@
       I am Interested
     </button>
 
-      <!-- Modal -->
+      <!-- vacant  -->
       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Resume Submission</h5>
+              <h4 class="modal-title" id="exampleModalLongTitle">Resume Submission</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -215,11 +215,11 @@
             <div class="modal-body justify-content-center">
               <form>
               <div class="form-group">
-                <label for="exampleFormControlFile1">Attach your resume/CV below.</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <h5>Attach your resume/CV below.</h5>
+                <input type="file" class="form-control-file border" id="exampleFormControlFile1">
               </div>
               <div class="form-group">
-               <label for="exampleFormControlTextarea1">Remarks Eg. Preferred date for interview.</label>
+               <label for="exampleFormControlTextarea1">Remarks Eg. Preferred date for an interview session.</label>
                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
              </div>
             </form>
@@ -235,27 +235,60 @@
     <!-- membership modal-->
     <div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content text-dark">
           <div class="modal-header">
-            <h5 class="modal-title" id="">Membership</h5>
+            <h4>Membership</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body justify-content-center">
-            <form>
-            <div class="form-group">
-              <label for="">Attach your resume/CV below.</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          <div class="modal-body">
+            <div class="container text-center">
+              <h4>Subscription Rates</h4>
+              <p>Registration Fees</p>
+              <p>Students RM 2.00 | Non-Students RM 5.00</p>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Adult</td>
+                    <td class="text-success">RM 5.00/Month</td>
+                  </tr>
+                  <tr>
+                    <td>Student/Retiree/OKU</td>
+                    <td class="text-success">RM 3.00/Month</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr>
             </div>
-            <div class="form-group">
-             <label for="">Remarks Eg. Preferred date for interview.</label>
-             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-           </div>
-          </form>
+            <div class=" container mb-5">
+              <p>Please provide the following:</p>
+              <ul>
+                <li>Double sided photocopy of MYCARD(Identity Card) or birth certificate for those who are below 12 years old.</li>
+                <li>Photocopy of latest water bill or telephone bill (verification of correspondence address).</li>
+                <li>2 copies of passport size photo.</li>
+              </ul>
+            </div>
+            <div class=" container">
+              <p>Outstation members/ non-Malaysians need to pay a deposit of RM60.00 (refundable with
+                 official receipt)
+              </p>
+              <p>Loans are limited to 4 books each time</p>
+              <ul>
+                <li>The loan period is 1 month; renewals are permitted. </li>
+                <li>For overdue books, a charge of 10 sen per day per book is levied. </li>
+              </ul>
+              <p>For those below 12 years of age, their parent must be an active member.</p>
+            </div>
           </div>
           <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+            <button type="button" class="btn btn-info" data-dismiss="modal">Subscribe Now</button>
           </div>
         </div>
       </div>
