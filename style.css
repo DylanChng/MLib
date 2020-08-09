@@ -1,10 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 16px Montserrat, sans-serif;
   line-height: 1.8;
   color: #fff;
 }
+
 /*
-# nav stuff
+# -------------- nav stuff ----------------
 */
 .navbar {
   padding-top: 0px;
@@ -17,12 +22,12 @@ body {
   letter-spacing: 0px;
 }
 
-.underline {
-
+.naviItem{
+  color: #1bac91;
 }
 
-.underline:hover {
-
+.naviItem:hover{
+  color: #1bac91;
 }
 
 .mainLogo {
@@ -39,7 +44,7 @@ p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 
 /*
-# main content
+# ---------------- main content -------------------
 */
 
 .bg-1 {
@@ -73,6 +78,68 @@ h3 {
   font-weight: 700;
   line-height: 56px;
   color: #1bac91;
+}
+
+h4 {
+  margin: 0px 0 10px 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #1bac91;
+}
+
+#backTo {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #1bac91;
+  color: #000;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom:10px;
+  border-radius: 4px;
+}
+
+#backTo:hover {
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+
+.btn-get-started {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-get-started:hover {
+  border-color: #1bac91;
+  background: #1bac91;
+  text-decoration: none;
+  color: #000;
+}
+
+/*
+# -----------------Events Section-------------------
+*/
+.turqoisePill{
+  background: #1bac91 !important;
+}
+
+.turqoiseLine{
+  border-color: #1bac91 !important;
 }
 
 /*
@@ -116,25 +183,6 @@ h3 {
   font-size: 24px;
 }
 
-#banner .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#banner .btn-get-started:hover {
-  border-color: #1bac91;
-  background: #1bac91;
-}
-
 .btnSearch {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -154,7 +202,6 @@ h3 {
   transition: all .3s ease-in-out;
   color: #fff;
 }
-
 
 @media (min-width: 1024px) {
   #banner {
@@ -179,6 +226,24 @@ h3 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+
+/*
+# --------------- Back to top button -------------
+*/
+.backToTop {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  bottom: 15px;
+  background: #1bac91;
+  color: #fff;
+}
+
+.backToTop:hover {
+  color: #fff;
+  background: #18967e;
 }
 
 /*
@@ -296,3 +361,7 @@ h1 {
     }
   }
 }
+
+/*
+# --------------- extras -------------
+*/

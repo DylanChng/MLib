@@ -17,30 +17,30 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg sticky-top bg-white border">
     <a class="navbar-brand ml-5" href="index.html"><img src="resource/MPL1.png" width="150" height="50" alt="Logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link underline" type="button" data-toggle="modal" data-target="#memberModal">Membership</a>
+          <a class="nav-link" style="color:#1bac91;" type="button" data-toggle="modal" data-target="#memberModal">Membership</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">Events</a>
+          <a class="nav-link naviItem" href="events.html">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">About Us</a>
+          <a class="nav-link naviItem" href="index.html#aboutUs">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">Sponsorship</a>
+          <a class="nav-link naviItem" href="index.html#partnership">Sponsorship</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">Contact Us</a>
+          <a class="nav-link naviItem" href="index.html#contactUs">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">Join Our Team</a>
+          <a class="nav-link naviItem" href="index.html#vacancy">Join Our Team</a>
         </li>
       </ul>
       <span class="mr-2">
@@ -61,8 +61,9 @@
     </div>
 </nav>
 
-<div class="container py-2">
-    <h2 class="font-weight-light text-center text-dark py-3">Events and Ocasions</h2>
+<div class="container-fluid">
+<div class="container text-dark">
+    <h3 class="text-center">Events and Ocasions</h3>
 
     <!-- timeline item 1 -->
     <div class="row">
@@ -73,20 +74,30 @@
                 <div class="col">&nbsp;</div>
             </div>
             <h5 class="m-2">
-                <span class="badge badge-pill bg-success border">&nbsp;</span>
+                <span class="badge badge-pill turqoisePill border">&nbsp;</span>
             </h5>
             <div class="row h-50">
-                <div class="col border-right">&nbsp;</div>
+                <div class="col border-right turqoiseLine ">&nbsp;</div>
                 <div class="col">&nbsp;</div>
             </div>
         </div>
         <!-- timeline item 1 event content -->
         <div class="col py-2">
-            <div class="card timeBorder shadow">
+            <div class="card timeBorder shadow text-dark">
                 <div class="card-body">
-                    <div class="float-right text-muted">Mon, Jan 9th 2020 7:00 AM</div>
-                    <h4 class="card-title text-muted">Day 1 Orientation</h4>
-                    <p class="card-text">Welcome to the campus, introduction and get started with the tour.</p>
+                    <div class="float-right text-info">January 9th 2005</div>
+                    <h4 class="card-title">Cultural Parade</h4>
+                    <p class="card-text">The Parade started from Puchong Perdana to IOI City Mall and involved multiple races. Unity is enhanced.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <button class="btn" data-target="#eventOne" data-toggle="collapse">
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="#046276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>
+                </button>
+                <div id="eventOne" class="collapse">
+                  <img src="resource/parade.jpg" class="img-fluid" alt="parade">
+                </div>
                 </div>
             </div>
         </div>
@@ -94,62 +105,75 @@
     <!--/row-->
     <!-- timeline item 2 -->
     <div class="row">
-        <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="col-auto text-center flex-column d-none d-sm-flex ">
             <div class="row h-50">
-                <div class="col border-right">&nbsp;</div>
+                <div class="col border-right turqoiseLine">&nbsp;</div>
                 <div class="col">&nbsp;</div>
             </div>
             <h5 class="m-2">
-                <span class="badge badge-pill bg-success">&nbsp;</span>
+                <span class="badge badge-pill turqoisePill bg-light border">&nbsp;</span>
             </h5>
             <div class="row h-50">
-                <div class="col border-right">&nbsp;</div>
+                <div class="col border-right turqoiseLine">&nbsp;</div>
                 <div class="col">&nbsp;</div>
             </div>
         </div>
         <div class="col py-2">
             <div class="card timeBorder shadow">
                 <div class="card-body">
-                    <div class="float-right text-success">Tue, Jan 10th 2019 8:30 AM</div>
-                    <h4 class="card-title text-success">Day 2 Sessions</h4>
-                    <p class="card-text">Sign-up for the lessons and speakers that coincide with your course syllabus. Meet and greet with instructors.</p>
-                    <button class="btn btn-sm btn-outline-secondary" type="button" data-target="#t2_details" data-toggle="collapse">Show Details ▼</button>
-                    <div class="collapse border" id="t2_details">
-                        <div class="p-2 text-monospace">
-                            <div>08:30 - 09:00 Breakfast in CR 2A</div>
-                            <div>09:00 - 10:30 Live sessions in CR 3</div>
-                            <div>10:30 - 10:45 Break</div>
-                            <div>10:45 - 12:00 Live sessions in CR 3</div>
-                        </div>
-                    </div>
+                    <div class="float-right text-info">January 11th 2008</div>
+                    <h4 class="card-title">Awards & Competition</h4>
+                    <p>Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual
+                        bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg sartorial tote bag distillery Portland before
+                        they sold out gastropub taxidermy Vice.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn" data-target="#eventTwo" data-toggle="collapse">
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="#046276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>
+                </button>
+                <div id="eventTwo" class="collapse">
+                  <img src="resource/award.jpg" class="img-fluid" alt="award">
                 </div>
             </div>
         </div>
     </div>
+  </div>
     <!--/row-->
     <!-- timeline item 3 -->
     <div class="row">
         <div class="col-auto text-center flex-column d-none d-sm-flex ">
             <div class="row h-50">
-                <div class="col border-right">&nbsp;</div>
+                <div class="col border-right turqoiseLine">&nbsp;</div>
                 <div class="col">&nbsp;</div>
             </div>
             <h5 class="m-2">
-                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                <span class="badge badge-pill turqoisePill bg-light border">&nbsp;</span>
             </h5>
             <div class="row h-50">
-                <div class="col border-right">&nbsp;</div>
+                <div class="col border-right turqoiseLine">&nbsp;</div>
                 <div class="col">&nbsp;</div>
             </div>
         </div>
         <div class="col py-2">
             <div class="card timeBorder shadow">
                 <div class="card-body">
-                    <div class="float-right text-muted">Wed, Jan 11th 2019 8:30 AM</div>
-                    <h4 class="card-title">Day 3 Sessions</h4>
+                    <div class="float-right text-info">February 11th 2010</div>
+                    <h4 class="card-title">Reading Session</h4>
                     <p>Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual
                         bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg sartorial tote bag distillery Portland before
                         they sold out gastropub taxidermy Vice.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn" data-target="#eventThree" data-toggle="collapse">
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="#046276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>
+                </button>
+                <div id="eventThree" class="collapse">
+                  <img src="resource/reading.jpg" class="img-fluid" alt="read">
+                </div>
                 </div>
             </div>
         </div>
@@ -158,14 +182,56 @@
     <!-- timeline item 4 -->
     <div class="row">
         <div class="col-auto text-center flex-column d-none d-sm-flex">
+          <div class="row h-50">
+              <div class="col border-right turqoiseLine">&nbsp;</div>
+              <div class="col">&nbsp;</div>
+          </div>
+          <h5 class="m-2">
+              <span class="badge badge-pill turqoisePill bg-light border">&nbsp;</span>
+          </h5>
+          <div class="row h-50">
+              <div class="col border-right turqoiseLine">&nbsp;</div>
+              <div class="col">&nbsp;</div>
+          </div>
+        </div>
+        <div class="col py-2">
+            <div class="card timeBorder shadow">
+                <div class="card-body">
+                    <div class="float-right text-info">June 11th 2018</div>
+                    <h4 class="card-title">Workshop</h4>
+                    <p>Join us for lunch in Bootsy's cafe across from the Campus Center.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn" data-target="#eventFour" data-toggle="collapse">
+                      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="#046276" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                      </svg>
+                    </button>
+                <div id="eventFour" class="collapse">
+                   <img src="resource/workshop.jpg" class="img-fluid" alt="work">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <!--/row-->
+    <!--/row-->
+    <!-- timeline item 4 -->
+    <div class="row">
+        <div class="col-auto text-center flex-column d-none d-sm-flex">
             <div class="row h-50">
-                <div class="col border-right">&nbsp;</div>
+                <div class="col border-right turqoiseLine">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+            </div>
+
+            <div class="row h-50">
+                <div class="col border-right turqoiseLine">&nbsp;</div>
                 <div class="col">&nbsp;</div>
             </div>
             <h5 class="m-2">
-                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                <span class="badge badge-pill turqoisePill bg-light border">&nbsp;</span>
             </h5>
-            <div class="row h-50">
+            <div class="row h-50 turqoiseLine">
                 <div class="col">&nbsp;</div>
                 <div class="col">&nbsp;</div>
             </div>
@@ -173,17 +239,102 @@
         <div class="col py-2">
             <div class="card timeBorder shadow">
                 <div class="card-body">
-                    <div class="float-right text-muted">Thu, Jan 12th 2019 11:30 AM</div>
-                    <h4 class="card-title">Day 4 Wrap-up</h4>
+                    <div class="float-right text-info">May 11th 2020</div>
+                    <h4 class="card-title">Motivational Talk</h4>
                     <p>Join us for lunch in Bootsy's cafe across from the Campus Center.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn" data-target="#eventFive" data-toggle="collapse">
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="#046276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>
+                </button>
+                <div id="eventFive" class="collapse">
+                  <img src="resource/talk.jpg" class="img-fluid" alt="talk">
+                </div>
                 </div>
             </div>
         </div>
     </div>
     <!--/row-->
-</div>
+    </div>
+    </div>
+
 <!--container-->
 
+<!-- membership modal-->
+<div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h4>Membership Subscription Rates</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container text-center">
+          <p>Registration Fees</p>
+          <p>Students RM 2.00 | Non-Students RM 5.00</p>
+          <p>Then</p>
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Adult</td>
+                <td class="text-success">RM 5.00/Month</td>
+              </tr>
+              <tr>
+                <td>Student/Retiree/OKU</td>
+                <td class="text-success">RM 3.00/Month</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+        <div class=" container mb-5">
+        <h5>Please provide the following:</h5>
+            <ul>
+              <li>Double sided photocopy of MYCARD(Identity Card) or birth certificate for those who are below 12 years old.</li>
+              <li>Photocopy of latest water bill or telephone bill (verification of correspondence address).</li>
+              <li>2 copies of passport size photo.</li>
+            </ul>
+        </div>
+        <div class=" container">
+          <h5>Rules and Regulations</h5>
+          <ul>
+            <li><p>Outstation members/non-Malaysians are required to pay a deposit of RM60.00 (refundable with
+               official receipt)
+            </p>
+            </li>
+            <li>
+            <p>Loans are limited to 4 books each time</p>
+            <ul>
+              <li>The loan period is 1 month; renewals are permitted. </li>
+              <li>For overdue books, a charge of 10 sen per day per book is levied. </li>
+            </ul>
+          </li>
+          <li>
+            <p>For those below 12 years of age, their parent(s) are required to be an active member.</p>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Subscribe Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div>
+      <button class="btn btn-sm"><a id="backTo" class="text-white" href="#top" style="text-decoration:none">&uarr;</a></button>
+    </div>
 
 
 </body>

@@ -17,30 +17,30 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg sticky-top bg-white border">
     <a class="navbar-brand ml-5" href="index.html"><img src="resource/MPL1.png" width="150" height="50" alt="Logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link underline" type="button" data-toggle="modal" data-target="#memberModal">Membership</a>
+          <a class="nav-link" style="color:#1bac91;" type="button" data-toggle="modal" data-target="#memberModal">Membership</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="events.html">Events</a>
+          <a class="nav-link naviItem" href="events.html">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">About Us</a>
+          <a class="nav-link naviItem" href="index.html#aboutUs">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">Sponsorship</a>
+          <a class="nav-link naviItem" href="index.html#partnership">Sponsorship</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">Contact Us</a>
+          <a class="nav-link naviItem" href="index.html#contactUs">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link underline" href="#">Join Our Team</a>
+          <a class="nav-link naviItem" href="index.html#vacancy">Join Our Team</a>
         </li>
       </ul>
       <span class="mr-2">
@@ -93,14 +93,14 @@
           </div>
        </div>
       </div>
-      <div class="container text-center text-center">
+      <div class="container text-center text-center mt-3">
         <input class="form-control text-center" type="search" placeholder="Keyword" aria-label="Search">
         <a href="" class="btnSearch mt-5">Search</a>
       </form>
       </div>
     </div>
     <div class="container text-center mt-5">
-        <a href="" class="btn-get-started mt-5">Explore</a>
+        <a href="#aboutUs" class="btn-get-started">Explore</a>
     </div>
   </section>
   <!-- End banner -->
@@ -111,7 +111,7 @@
     </div>
 
   <!-- About Us -->
-    <div class="container-fluid bg-3 text-center">
+    <div class="container-fluid bg-3 text-center" id="aboutUs">
       <h3 class="">About Us</h3><br>
       <div class="container bg-2 text-center">
         <img src="resource/pub.jpg"  alt="publication">
@@ -134,13 +134,15 @@
     </div>
 
   <!-- Contact Us -->
-    <div class="container-fluid bg-2 text-center">
+    <div class="container-fluid bg-2 text-center" id="contactUs">
       <h3 class="margin">Contact Us</h3>
       <!-- ======= Contact Section ======= -->
-      <div class="container">
-        <p>Opening Hours     Tuesday - Friday 9AM - 4PM</p>
-        <p>Saturday - Sunday 12PM - 4PM</p>
-        <p>Closed     Mondays and Public Holidays</p>
+      <div class="container text-center text-justify">
+        <p>Opening Hours</p>
+        <p class="text-info">Tuesday - Friday 9AM - 4PM</p>
+        <p class="text-info">Saturday - Sunday 12PM - 4PM</p>
+        <p>Closed on </p>
+        <p class="text-danger">Mondays and Public Holidays</p>
       </div>
       <section id="contact" class="contact">
         <div class="container">
@@ -188,13 +190,13 @@
     </section><!-- End Contact Section -->
 
   <!-- Sponsorship -->
-    <div class="container-fluid bg-2 text-center">
-      <h3 class="margin">Trusted By</h3>
+    <div class="container-fluid bg-2 text-center" id="partnership">
+      <h3 class="margin">Sponsorship</h3>
       <img src="resource/help3.png" alt="logos" width="60%" height="150">
     </div>
 
     <!-- Carreer -->
-    <div class="container-fluid bg-2 text-center">
+    <div class="container-fluid bg-2 text-center" id="vacancy">
       <h3 class="margin">Be Part of Us</h3>
       <p>Kindly provide us your resume/CV and we will get back to you with a date of the interview as soon as possible.</p>
       <!-- Button trigger modal -->
@@ -300,6 +302,14 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <div>
+      <button class="btn btn-sm"><a id="backTo" class="text-white" href="#top" style="text-decoration:none">&uarr;</a></button>
     </div>
 
 </body>
