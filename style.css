@@ -58,8 +58,12 @@ p {font-size: 16px;}
 }
 
 .bg-3 {
-  background-color: #ffffff;
+  background-color: #f2f9f8;
   color: #000;
+}
+
+.inner3{
+  background-color: #f2f9f8;
 }
 
 .bg-4 {
@@ -129,6 +133,22 @@ h4 {
   background: #1bac91;
   text-decoration: none;
   color: #000;
+}
+
+/*
+# -----------------All transitions-------------------
+*/
+
+.zoom{
+  transform: scale(1.0);
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.zoom:hover{
+  transform: scale(1.1);
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
 }
 
 /*
@@ -227,6 +247,86 @@ h4 {
     margin-bottom: 30px;
   }
 }
+/*
+# -----------------banner 2 Section-------------------
+*/
+#bannerTwo {
+  width: 100%;
+  height: calc(100vh - 0px);
+  background: url("resource/shelves.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top:0px;
+  padding: 0;
+}
+
+#bannerTwo:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#bannerTwo .container {
+  z-index: 2;
+}
+
+#bannerTwo h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#bannerTwo h2 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 35px;
+  font-size: 24px;
+}
+
+@media (min-width: 1024px) {
+  #bannerTwo {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  #bannerTwo {
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+  }
+}
+
+@media (max-width: 768px) {
+  #bannerTwo h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #bannerTwo h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 # --------------- Back to top button -------------
