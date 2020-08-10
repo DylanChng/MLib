@@ -44,6 +44,66 @@ p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 
 /*
+# ---------------- tray -------------------
+*/
+.myTray {
+  margin-top: 10%;
+  height: 70%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: -10px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.myTray a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.myTray a:hover {
+  color: #f1f1f1;
+}
+
+.myTray .closebtn {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right:0;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#trayBtn {
+  position: fixed;
+  top: 300px;
+  right: -5px;
+  z-index: 4;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom:10px;
+  border-radius: 4px;
+}
+
+@media screen and (max-height: 450px) {
+  .myTray {padding-top: 15px;}
+  .myTray a {font-size: 18px;}
+}
+
+/*
 # ---------------- main content -------------------
 */
 
