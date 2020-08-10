@@ -60,26 +60,15 @@ p {font-size: 16px;}
   padding-top: 60px;
 }
 
-.myTray a {
-  padding: 8px 8px 8px 32px;
+.myTray .closebtn {
+  position: fixed;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  color:#1bac91;
   display: block;
   transition: 0.3s;
-}
-
-.myTray a:hover {
-  color: #f1f1f1;
-}
-
-.myTray .closebtn {
-  position: absolute;
   z-index: 5;
-  top: 0;
-  right:0;
-  font-size: 36px;
-  margin-left: 50px;
+  font-size: 25px;
+  margin-left: 5px;
 }
 
 #trayBtn {
@@ -96,6 +85,10 @@ p {font-size: 16px;}
   padding-right: 20px;
   padding-bottom:10px;
   border-radius: 4px;
+}
+
+.grayLine{
+  background-color: #eee;
 }
 
 @media screen and (max-height: 450px) {
@@ -195,6 +188,16 @@ h4 {
   color: #000;
 }
 
+.sideBar{
+  font-size: 20px;
+  overflow-x:  hidden;
+  overflow-y:  hidden;
+}
+
+.smallText{
+  font-size: 13px;
+}
+
 /*
 # -----------------All transitions-------------------
 */
@@ -241,6 +244,10 @@ h4 {
 
 .turqoiseLine{
   border-color: #1bac91 !important;
+}
+
+.turqoiseText{
+  color: #1bac91 !important;
 }
 
 /*

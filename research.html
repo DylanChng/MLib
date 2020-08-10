@@ -65,8 +65,11 @@
   </nav>
 
 
-  <div class="container-fluid mb-0">
-    <div class="container">
+  <div class="container-fluid">
+    <div class="container ">
+      <div class="container text-center">
+        <h3>Find A Book</h3>
+      </div>
       <div class="container text-center text-center mt-3">
         <form>
           <input class="form-control text-center" type="search" placeholder="Keyword" aria-label="Search">
@@ -125,7 +128,7 @@
     </div>
   </div>
 </div>
-
+<hr>
 <!-- frame for each book -->
   <div class="container-fluid mt-0">
     <div class="container text-dark">
@@ -172,7 +175,7 @@
     </div>
   </div>
 </div>
-
+<hr>
 <!-- frame for each book -->
   <div class="container-fluid mt-0">
     <div class="container text-dark">
@@ -219,7 +222,7 @@
     </div>
   </div>
 </div>
-
+<hr>
 <!-- frame for each book -->
   <div class="container-fluid mt-0">
     <div class="container text-dark">
@@ -264,6 +267,14 @@
           </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="container text-center zoom">
+    <button class="btn btn-info">More Like This <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+    </svg></button>
   </div>
 </div>
 
@@ -336,11 +347,64 @@
     </div>
   </div>
 </div>
+<div>
+  <button class="btn btn-sm"><a id="backTo" class="text-white" href="#top" style="text-decoration:none">&uarr;</a></button>
+</div>
 
-    <footer>
-      <div class="container-fluid text-center bg-dark p-4">
-        <small>2020 Copyright &copy; Malaysian Public Library</small>
-      </div>
-    </footer>
+<div class="">
+  <button class="btn btn-warning trayBtn" id="trayBtn" onclick="openNav()"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmarks" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M7 13l5 3V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12l5-3zm-4 1.234l4-2.4 4 2.4V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10.234z"/>
+    <path d="M14 14l-1-.6V2a1 1 0 0 0-1-1H4.268A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v12z"/>
+  </svg></button>
+</div>
+
+<!-- tray -->
+<div id="myTray" class="myTray bg-dark rounded-left">
+  <h4 class="text-center">Borrowed Books</h4>
+    <a type="button" href="javascript:void(0)" class="closebtn mt-0 pt-0" onclick="closeNav()">&times;</a>
+
+  <div class="container sideBar text-white text-center">
+    <br>
+      <h5 class="text-info text-center">John Tan Kiong Hee</h5>
+    <br>
+    <p class="text-success">1. Harry P. The Deadly Hollows</p> <p class="smallText">12 Days Left</p>
+    <p class="text-success">2. Harry P. The Prison of AKB</p>  <p class="smallText">10 Days Left</p>
+    <p class="text-success">3. Harry P. The Deadly Hollows</p> <p class="smallText">5 Days Left</p>
+    <p class="text-success">4. Game Of Thrones Season 8</p>             <p class="smallText"> 22 Days Left</p>
+    <p class="text-success">5. Tales of The Wildlings</p> <p class="smallText">12 Days Left</p>
+    <p class="text-success">6. Java 2 2020</p>  <p class="smallText">10 Days Left</p>
+  </div>
+</div>
+
+<footer>
+  <div class="container-fluid text-center bg-dark p-4">
+    <small>2020 Copyright &copy; Malaysian Public Library</small>
+  </div>
+</footer>
+
+<script>
+  $('.count').each(function () {
+  $(this).prop('Counter',0).animate({
+      Counter: $(this).text()
+  }, {
+      duration: 4000,
+      easing: 'swing',
+      step: function (now) {
+          $(this).text(Math.ceil(now));
+      }
+  });
+});
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("myTray").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("myTray").style.width = "0";
+}
+</script>
+
 </body>
 </html>
